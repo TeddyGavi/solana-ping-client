@@ -51,6 +51,9 @@ async function pingProgram(connection: web3.Connection, payer: web3.Keypair) {
   );
 
   console.log(signature);
+  console.log(
+    `You can view your transaction on the Solana Explorer at:\nhttps://explorer.solana.com/tx/${signature}?cluster=devnet`
+  );
 }
 
 async function main() {
